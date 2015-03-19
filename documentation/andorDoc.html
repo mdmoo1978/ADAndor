@@ -608,7 +608,7 @@
     Shamrock spectrograph control</h2>
   <p>
     The Andor module also includes a driver for the Andor Shamrock spectrographs. This
-    driver allows control of the grating, central wavelength, and slit sizes.
+    driver allows control of the grating, central wavelength, slit sizes, and flipper mirrors.
   </p>
   <table border="1" cellpadding="2" cellspacing="2" style="text-align: left">
     <tbody>
@@ -774,6 +774,39 @@
           SR_CALIBRATION</td>
         <td>
           Calibration</td>
+        <td>
+          bi</td>
+      </tr>
+      <tr>
+        <td>
+          SRFlipperMirrorExists</td>
+        <td>
+          asynInt32</td>
+        <td>
+          R/O</td>
+        <td>
+          Flag indicating if a flipper mirror is present</td>
+        <td>
+          SR_FLIPPER_MIRROR_EXISTS</td>
+        <td>
+          FlipperMirrorExists[N], N=1-2</td>
+        <td>
+          bi</td>
+      </tr>
+      <tr>
+        <td>
+          SRFlipperMirrorPort</td>
+        <td>
+          asynInt32</td>
+        <td>
+          R/W</td>
+        <td>
+          Flag indicating if a flipper mirror is set for direct or side port</td>
+        <td>
+          SR_FLIPPER_MIRROR_PORT</td>
+        <td>
+          FlipperMirror[N], N=1-2<br>
+          FlipperMirror[N]_RBV</td>
         <td>
           bi</td>
       </tr>
